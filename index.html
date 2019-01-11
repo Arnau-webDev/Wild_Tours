@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200|Rajdhani:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Wild Tours</title>
+
+</head>
+<body onload="header_anim()">
+    <div id="overlay"></div>
+        <div id="wrapper">
+            <div id="container">
+            <header id="home">
+                <nav id="mobileNav">
+                    <ul>
+                        <li><a href="#home" class="scroll">Home</a></li>
+                        <li><a href="#section2" class="scroll">Our Tours</a></li>
+                        <li><a href="#section5" class="scroll">About Us</a></li>
+                        <li><a href="#section6" class="scroll">Contact</a></li>
+                    </ul>
+                </nav>
+                <div id="header_div">
+                    <div id="header_headings-container">
+                        <h1>Wild Tours</h1>
+                        <h2 style="font-size: 1.3rem">Try letting out the wildest part of you</h2>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="toggle-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav id="sidebar">
+                    <p class="closeSidebar">X</p>
+                    <ul>
+                        <li><a href="#home" class="scroll">Home</a></li>
+                        <li><a href="#section2" class="scroll">Our Tours</a></li>
+                        <li><a href="#section4" class="scroll">Personalized Tours</a></li>
+                        <li><a href="#section5" class="scroll">About Us</a></li>
+                        <li><a href="#section6" class="scroll special">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- <section id="section1">
+                    <div id="slider">
+                            <h2>Slider</h2>
+                    </div> -->
+                </section>
+                <section id="section2">
+                    <h2>The Tours we Offer</h2>
+                        <div id="section2_boxContainer">
+                                <div class="tourBox opener1"><p>Snowy Tours</p></div>
+                                <div class="tourBox opener2"><p>Deep Forest Tours</p></div>
+                                <div class="tourBox opener3"><p>Safari Tours</p></div>
+                                <div class="tourBox opener4"><p>Seacost Tours</p></div>                      
+                        </div>
+
+                    <!-- MODALS -->
+                        <!-- MODAL 1 -->
+
+                        <div id="modal1" class="modal open">
+                            <div class="modal_textDiv">
+                                <h3>Snowy Tours</h3>
+                                <ul>
+                                    <li><a href="#">2-5 people</a></li>
+                                    <li><a href="#">Provided tents</a></li>
+                                    <li><a href="#">Difficulty: hard</a></li>
+                                    <li><a href="#">Guide: Mandatory</a></li>
+                                    <li><a href="#">No transport</a></li>
+                                </ul>
+                                <div class="modal_textBottomDiv">
+                                <a href="#snowRow" id="see1" class="modal_booking scroll2">See Now!</a>
+                                <a href="#section4" id="perso1" class="modal_booking scroll2">Personalized tour!</a>
+                                </div>
+                            </div>
+                            <div class="closeDiv"><p id="close1">X</p></div>
+                        </div> 
+
+                        <!-- MODAL 2 -->
+
+                        <div id="modal2" class="modal open">
+                            <div class="modal_textDiv">
+                                <h3>Forest Tours</h3>
+                                <ul>
+                                    <li><a href="#">3-8 people</a></li>
+                                    <li><a href="#">Provided tents</a></li>
+                                    <li><a href="#">Difficulty: hard</a></li>
+                                    <li><a href="#">Guide: optional</a></li>
+                                    <li><a href="#">No transport</a></li>
+                                </ul>
+                                <div class="modal_textBottomDiv">
+                                    <a href="#forestRow" class="modal_booking scroll2">See Now!</a>
+                                    <a href="#section4" class="modal_booking scroll2">Personalized tour!</a>
+                                </div>
+                            </div>
+                            <div class="closeDiv"><p id="close2">X</p></div>
+                        </div>
+
+                        <!-- MODAL 3 -->
+
+                        <div id="modal3" class="modal open">
+                            <div class="modal_textDiv">
+                                <h3>Safari Tours</h3>
+                                <ul>
+                                    <li><a href="#">12-25 people</a></li>
+                                    <li><a href="#">Provided tents</a></li>
+                                    <li><a href="#">Difficulty: medium</a></li>
+                                    <li><a href="#">Guide: Yes</a></li>
+                                    <li><a href="#">Safari Car</a></li>
+                                </ul>
+                                <div class="modal_textBottomDiv">
+                                    <a href="#safariRow" class="modal_booking scroll2">See Now!</a>
+                                    <a href="#section4" class="modal_booking scroll2">Personalized tour!</a>
+                                </div>
+                            </div>
+                            <div class="closeDiv"><p id="close3">X</p></div>
+                        </div>
+
+
+                        <!-- MODAL 4 -->
+
+                        <div id="modal4" class="modal open">
+                            <div class="modal_textDiv">
+                                <h3>Seacost Tours</h3>
+                                <ul>
+                                    <li><a href="#">5-15 people</a></li>
+                                    <li><a href="#">Paid Hotel</a></li>
+                                    <li><a href="#">Difficulty: easy</a></li>
+                                    <li><a href="#">Guide: Yes</a></li>
+                                    <li><a href="#">Sea boat</a></li>
+                                </ul>
+                                <div class="modal_textBottomDiv">
+                                    <a href="#seaRow" class="modal_booking scroll2">See Now!</a>
+                                    <a href="#section4" class="modal_booking scroll2">Personalized tour!</a>
+                                </div>
+                            </div>
+                            <div class="closeDiv"><p id="close4">X</p></div>
+                        </div>
+
+                    <!-- MODALS END -->
+                </section>
+
+                <!-- FLIP CARDS -->
+
+                <section id="section3">
+                    <h3>Our Best Snowy Tours</h3>
+                    <div id="snowRow" class="section3_row">
+                        <div class="cardContainer">
+                            <div class="card">
+                                <div class="frontCard front-back">
+                                    <div class="topImg topImg--1"></div>   
+                                    <div class="frontCrad_content">
+                                        <div class="frontProva">
+                                        <h4 class="frontHeading snow">Iceland</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </div>
+                                    </div>
+                                    <div class="mobileV mobileV--1">
+                                        <p>Only for $597</p>
+                                        <a href="#">Iceland</a>
+                                    </div>
+                                </div>
+                                <div class="backCard  front-back backCard--1">
+                                    <div class="centering backText">Only for $597</div>
+                                    <div class="centering"><a href="#" class="modal_booking">Book now!</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                        <div class="cardContainer">
+                                <div class="card">
+                                    <div class="frontCard front-back">
+                                        <div class="topImg topImg--2"></div>   
+                                        <div class="frontCrad_content">
+                                            <div class="frontProva">
+                                            <h4 class="frontHeading snow">Siberia</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+                                        </div>
+                                        <div class="mobileV mobileV--1">
+                                            <p>Only for $663</p>
+                                            <a href="#">Siberia</a>
+                                        </div>
+                                    </div>
+                                <div class="backCard  front-back backCard--1">
+                                    <div class="centering backText">Only for $663</div>
+                                    <div class="centering"><a href="#" class="modal_booking">Book now!</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="cardContainer">
+                                <div class="card">
+                                        <div class="frontCard front-back">
+                                            <div class="topImg topImg--3"></div>   
+                                            <div class="frontCrad_content">
+                                                <div class="frontProva">
+                                                    <h4 class="frontHeading snow">Alaska</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </div>
+                                            </div>
+                                            <div class="mobileV mobileV--1">
+                                                <p>Only for $721</p>
+                                                <a href="#">Alaska</a>
+                                            </div>
+                                        </div>
+                                    <div class="backCard  front-back backCard--1">
+                                        <div class="centering backText">Only for $721</div>
+                                        <div class="centering"><a href="#" class="modal_booking">Book now!</a></div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+
+                    <h3>Our Best Forest Tours</h3>
+                    <div id="forestRow" class="section3_row margin-top">
+                            <div class="cardContainer">
+                                <div class="card">
+                                    <div class="frontCard front-back">
+                                        <div class="topImg topImg2--1"></div>   
+                                        <div class="frontCrad_content">
+                                            <div class="frontProva">
+                                            <h4 class="frontHeading forest">Slovenia</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+                                        </div>
+                                        <div class="mobileV mobileV--2">
+                                            <p>Only for $399</p>
+                                            <a href="#">Slovenia</a>
+                                        </div>
+                                    </div>
+                                    <div class="backCard  front-back backCard--2">
+                                        <div class="centering backText">Only for $399</div>
+                                        <div class="centering"><a href="#" class="modal_booking">Book now!</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+    
+                            <div class="cardContainer">
+                                <div class="card">
+                                        <div class="frontCard front-back">
+                                            <div class="topImg topImg2--2"></div>   
+                                            <div class="frontCrad_content">
+                                                <div class="frontProva">
+                                                <h4 class="frontHeading forest">Croatia</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </div>
+                                            </div>
+                                            <div class="mobileV mobileV--2">
+                                                <p>Only for $447</p>
+                                                <a href="#">Croatia</a>
+                                            </div>
+                                        </div>
+                                    <div class="backCard  front-back backCard--2">
+                                        <div class="centering backText">Only for $447</div>
+                                        <div class="centering"><a href="#" class="modal_booking">Book now!</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+    
+                            <div class="cardContainer">
+                                    <div class="card">
+                                            <div class="frontCard front-back">
+                                                <div class="topImg topImg2--3"></div>   
+                                                <div class="frontCrad_content">
+                                                    <div class="frontProva">
+                                                    <h4 class="frontHeading forest">Indonesia</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </div>
+                                                </div>
+                                                <div class="mobileV mobileV--2">
+                                                    <p>Only for $1110</p>
+                                                    <a href="#">Indonesia</a>
+                                                </div>
+                                            </div>
+                                        <div class="backCard  front-back backCard--2">
+                                            <div class="centering backText">Only for $1110</div>
+                                            <div class="centering"><a href="#" class="modal_booking">Book now!</a></div>
+                                        </div>
+                                    </div>
+                            </div>
+                    </div>
+
+                        <h3>Our Best Safari Tours</h3>
+                        <div id="safariRow" class="section3_row margin-top">
+                                <div class="cardContainer">
+                                    <div class="card">
+                                        <div class="frontCard front-back">
+                                            <div class="topImg topImg3--1"></div>   
+                                            <div class="frontCrad_content">
+                                                <div class="frontProva">
+                                                <h4 class="frontHeading safari">Tanzania</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </div>
+                                            </div>
+                                            <div class="mobileV mobileV--3">
+                                                <p>Only for $999</p>
+                                                <a href="#">Tanzania</a>
+                                            </div>
+                                        </div>
+                                        <div class="backCard  front-back backCard--3">
+                                            <div class="centering backText">Only for $999</div>
+                                            <div class="centering"><a href="#" class="modal_booking">Book now!</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+        
+                                <div class="cardContainer">
+                                    <div class="card">
+                                            <div class="frontCard front-back">
+                                                <div class="topImg topImg3--2"></div>   
+                                                <div class="frontCrad_content">
+                                                    <div class="frontProva">
+                                                    <h4 class="frontHeading safari">Kenya</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mobileV mobileV--3">
+                                                    <p>Only for $1597</p>
+                                                    <a href="#">Kenya</a>
+                                                </div>
+                                            </div>
+                                        <div class="backCard  front-back backCard--3">
+                                            <div class="centering backText">Only for $1597</div>
+                                            <div class="centering"><a href="#" class="modal_booking">Book now!</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+        
+                                <div class="cardContainer">
+                                        <div class="card">
+                                                <div class="frontCard front-back">
+                                                    <div class="topImg topImg3--3"></div>   
+                                                    <div class="frontCrad_content">
+                                                        <div class="frontProva">
+                                                        <h4 class="frontHeading safari">India</h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                    </div>
+                                                    </div>
+                                                    <div class="mobileV mobileV--3">
+                                                        <p>Only for $1099</p>
+                                                        <a href="#">India</a>
+                                                    </div>
+                                                </div>
+                                        
+                                            <div class="backCard  front-back backCard--3">
+                                                <div class="centering backText">Only for $1099</div>
+                                                <div class="centering"><a href="#" class="modal_booking">Book now!</a></div>
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+
+
+                        <h3>Our Best Sea Tours</h3>
+                        <div id="seaRow" class="section3_row margin-top">
+                                <div class="cardContainer">
+                                    <div class="card">
+                                        <div class="frontCard front-back">
+                                            <div class="topImg topImg4--1"></div>   
+                                            <div class="frontCrad_content">
+                                                <div class="frontProva">
+                                                <h4 class="frontHeading seaCoast">Greece</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </div>
+                                            </div>
+                                            <div class="mobileV mobileV--4">
+                                                <p>Only for $377</p>
+                                                <a href="#">Greece</a>
+                                            </div>
+                                        </div>
+                                        <div class="backCard  front-back backCard--4">
+                                            <div class="centering backText">Only for $377</div>
+                                            <div class="centering"><a href="#" class="modal_booking">Book now!</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+        
+                                <div class="cardContainer">
+                                    <div class="card">
+                                            <div class="frontCard front-back">
+                                                <div class="topImg topImg4--2"></div>   
+                                                <div class="frontCrad_content">
+                                                    <div class="frontProva">
+                                                        <h4 class="frontHeading seaCoast">Spain</h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mobileV mobileV--4">
+                                                    <p>Only for $490</p>
+                                                    <a href="#">Spain</a>
+                                                </div>
+                                            </div>
+                                        <div class="backCard  front-back backCard--4">
+                                            <div class="centering backText">Only for $490</div>
+                                            <div class="centering"><a href="#" class="modal_booking">Book now!</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+        
+                                <div class="cardContainer">
+                                        <div class="card">
+                                                <div class="frontCard front-back">
+                                                    <div class="topImg topImg4--3"></div>   
+                                                    <div class="frontCrad_content">
+                                                        <div class="frontProva">
+                                                        <h4 class="frontHeading seaCoast">Hawaii</h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                    </div>
+                                                    </div> 
+                                                    <div class="mobileV mobileV--4">
+                                                        <p>Only for $1200</p>
+                                                        <a href="#">Hawaii</a>
+                                                    </div>
+                                                </div>
+                                            <div class="backCard  front-back backCard--4">
+                                                <div class="centering backText">Only for $1200</div>
+                                                <div class="centering"><a href="#" class="modal_booking">Book now!</a></div>
+                                            </div>
+                                        </div>
+                                </div>
+                        </div>
+                </section>
+                <section id="section4">
+                    <h2>Our Current Personalizable Tours</h2> 
+                        <div id="persoCard">
+                            <div id="leftImg" class="leftImg persoCardImg persoCardImg--1"></div>
+                            <div class="persoCard_content">
+                                <!-- <h4>Location</h4> -->
+                                <ul id="dropDestination">
+                                    <li class="empty" id="locationDropDestination">Location</li>
+                                    <li class="empty" id="peopleDropDestination">People</li>
+                                    <li class="empty" id="difficultyDropDestination">Difficulty</li>
+                                    <li class="empty" id="guidanceDropDestination">Guidance</li>
+                                    <li class="empty" id="transportDropDestination">Transport</li>
+                                </ul>
+                            </div>
+                            <div id="rightImg" class="rightImg persoCardImg persoCardImg--1"></div>
+                        </div>
+                        <div id="persoBookDiv">
+                            <div><a href="#" class="modal_booking">Book now!</a></div>
+                        </div>
+
+                        <h3 class="opt">Options</h3>
+                        <div class="optionsContainer">
+                            <div>
+                                <h5>Location</h5>
+                                <ul id="locationUl">
+                                    <li class="fill" draggable="true">Iceland</li>
+                                    <li class="fill" draggable="true">Kenya</li>
+                                    <li class="fill" draggable="true">Slovenia</li>
+                                    <li class="fill" draggable="true">Greece</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>People</h5>
+                                <ul id="peopleUl">
+                                    <li class="fill" draggable="true">2-5</li>
+                                    <li class="fill" draggable="true">5-8</li>
+                                    <li class="fill" draggable="true">8-12</li>
+                                    <li class="fill" draggable="true">12-25</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Difficulty</h5>
+                                <ul id="difficultyUl">
+                                    <li class="fill" draggable="true">Easy</li>
+                                    <li class="fill" draggable="true">Medium</li>
+                                    <li class="fill" draggable="true">Hard</li>
+                                    <li class="fill" draggable="true">Intense</li>
+                                </ul>
+                            </div>  
+                            <div>
+                                <h5>Guidance</h5>
+                                <ul id="guidanceUl">
+                                    <li class="fill" draggable="true">No Guide</li>
+                                    <li class="fill" draggable="true">Semi Guided</li>
+                                    <li class="fill" draggable="true">Guided</li>
+                                    <li class="fill" draggable="true">Special</li>
+                                </ul>
+                            </div>
+                            <div class="full">
+                                <h5>Transport</h5>
+                                <ul id="transportUl">
+                                    <li class="fill" draggable="true">No use</li>
+                                    <li class="fill" draggable="true">Only if needed</li>
+                                    <li class="fill" draggable="true">Partial use</li>
+                                    <li class="fill" draggable="true">Full use</li>
+                                </ul>
+                            </div>
+                        </div>
+                </section>
+
+                <section id="section5">
+                    <h2>About Us</h2>
+                    <h3>Who we are</h3>
+                    <div class="aboutDiv">
+                        <p>We are a company specialised in running exotic exploring expeditions in full nature since 1992. We started out very little, by doing full guided mountain tours in our region, and due to our happy customers sharing their amazing experiences and our hard work, we have become what we are today. A top company in our sector that provides all kind of tours for all kind of clients all over the world.</p>
+                    </div>
+                    <div class="aboutDiv">
+                        <h3>What makes us so unique</h3>
+                        <p>We are a tour company like no other, we provide all kind of tours for all type of people. Beginning from full adventure wild survival safari, to a relaxed coast tour sleeping in cozy and luxurious hotels as well as exploring nature in its maximum expression. All that is possible with our services, and much more!</p>
+                    </div>
+                    <h3>What we offer</h3>
+                    <div class="aboutBoxes">
+                        <div class="aboutBox1"><h4>Enjoy Nature</h4></div>
+                        <div class="aboutBox2"><h4>Risks Free</h4></div>
+                        <div class="aboutBox3"><h4>Unique tours</h4></div>
+                    </div>
+                    <div class="aboutBoxesContent">
+                        <div id="about1" class="aboutHidden">
+                            <p>Enjoy nature in a peaceful and respectful way with our tours.</p>
+                        </div>
+        
+                        <div id="about2" class="aboutHidden">
+                            <p>All security measures are taken very seriously to ensure our clients safety.</p>
+                        </div>
+        
+                        <div id="about3" class="aboutHidden">
+                            <p>We provide very different and exotic tours at a very competitive price.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="section6">
+                    <h2>Contact Us</h2>
+                    <div class="contactContainer">
+                        <div class="contactWrapper">
+                            <div class="info">
+                                <h4>Contact Form</h4>
+                                <ul>
+                                    <li><i class="fa fa-road"></i> 44 Something Street</li>
+                                    <li><i class="fa fa-phone"></i> (655) 555-5555</li>
+                                    <li><i class="fa fa-envelope"></i> test@test.com</li>
+                                </ul>
+                            </div>
+                            <div class="contact">
+                                <h3>Email Us</h3>
+                                <form action="">
+                                    <p>
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name">
+                                    </p>
+                                    <p>
+                                        <label for="lastName">Last Name</label>
+                                        <input type="text" name="lastName">
+                                    </p>
+                                    <p>
+                                        <label for="mail">Email Adress</label>
+                                        <input type="email" name="mail">
+                                    </p>
+                                    <p>
+                                        <label for="phone">Phone Number</label>
+                                        <input type="text" name="phone">
+                                    </p>
+                                    <p>
+                                        <label class="checkLabel" for="declare">Are you looking to:</label>
+                                        <input class="work" type="radio" name="declare" value="work">Work with Us<br>
+                                        <input class="book" type="radio" name="declare" value="info">Book / Get some info<br>                               
+                                    </p>
+                                    <p>
+                                        <label for="know">How did you get to know us:</label>
+                                        <input type="checkbox" name="know" value="web">Our Web<br>
+                                        <input type="checkbox" name="know" value="web">Magazines<br>
+                                        <input type="checkbox" name="know" value="web">Socials<br>
+                                    </p>
+                                    <p class="full msg" id="msg">
+                                        <label for="message">Message</label>
+                                        <textarea name="message" rows="5" ></textarea>
+                                    </p>
+                                    <p class="CV" id="CV">
+                                        <label for="cv">Attach your CV</label>
+                                        <input type="file" name="pic" value="Select File">
+                                    </p>
+                                    <p class="full">
+                                        <input type="submit" value="Submit">
+                                        <!-- <button>Submit</button> -->
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- FLIP CARDS END -->
+            </main>
+            <footer id="footer">
+                <div id="footer_upsideDiv">
+                    <ul>
+                        <li><a href="#home" class="scroll">Home</a></li>
+                        <li><a href="#section2" class="scroll">Our Tours</a></li>
+                        <li><a href="#section5" class="scroll">About Us</a></li>
+                        <li><a href="#section6" class="scroll">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="footer_downsideDiv">
+                    <div>
+                        <ul>
+                            <li><i class="fab fa-facebook"></i></li>
+                            <li><i class="fab fa-twitter"></i></li>
+                            <li><i class="fab fa-instagram"></i></li>
+                            <li><i class="fab fa-google-plus-g"></i></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>&copy; Copyright 2018, All rights reserved</p>
+                    </div>
+                </div>
+            </footer>
+            </div>
+        </div>
+
+<!-- Link Jquery & JS -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Link Jquery & JS End -->
+
+</body>
+</html>
