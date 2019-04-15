@@ -1055,8 +1055,6 @@ h1::selection, h2::selection, h3::selection, h4::selection, p::selection, a::sel
 
     #header_div {
         border-radius: 0;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
     }
 
     #section2 .tourBox {
@@ -1148,6 +1146,10 @@ h1::selection, h2::selection, h3::selection, h4::selection, p::selection, a::sel
         font-size: 1rem;
     }
 
+    #section2, #section3 {
+        pointer-events: none;
+    }
+
     #dropDestination {
         width: 100px;
     }
@@ -1162,6 +1164,10 @@ h1::selection, h2::selection, h3::selection, h4::selection, p::selection, a::sel
 
     .aboutBoxes, .aboutBoxesContent {
         display: initial;
+    }
+
+    .aboutBoxes > * {
+        pointer-events: none;
     }
 
     .aboutBoxes div {
