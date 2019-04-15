@@ -1150,6 +1150,10 @@ h1::selection, h2::selection, h3::selection, h4::selection, p::selection, a::sel
         pointer-events: none;
     }
 
+    #section3 {
+        margin-top: 0;
+    }
+
     #dropDestination {
         width: 100px;
     }
@@ -1160,6 +1164,10 @@ h1::selection, h2::selection, h3::selection, h4::selection, p::selection, a::sel
 
     .mobileV {
         display: block;
+    }
+
+    .aboutDiv {
+        width: 80%;
     }
 
     .aboutBoxes, .aboutBoxesContent {
